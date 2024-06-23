@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: thelook_ecommerce
+    database: zeelo-dev      # This should be your GCP project ID
+    schema: dbt_snarayanan   # This should be your BigQuery dataset name
+    tables:
+      - name: thelook_inventory_items
+      - name: thelook_order_items
+      - name: thelook_orders
+      - name: products
+      - name: users

@@ -14,7 +14,7 @@
 WITH source AS (
 	SELECT *
 
-	FROM {{ source('thelook_ecommerce', 'events') }}
+	FROM {{ source('thelook_ecommerce', 'thelook_events') }}
 )
 
 SELECT
