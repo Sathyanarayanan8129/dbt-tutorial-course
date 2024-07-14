@@ -5,6 +5,11 @@ sources:
     database: zeelo-dev      # This should be your GCP project ID
     schema: dbt_snarayanan   # This should be your BigQuery dataset name
     tables:
+      - name: thelook_events
+        freshness:
+          warn_after: {count: 12, period: hour}
+          error_after: {count: 24, period: hour}
+        loaded_at_field: created_at
       - name: thelook_inventory_items
       - name: thelook_order_items
       - name: thelook_orders
