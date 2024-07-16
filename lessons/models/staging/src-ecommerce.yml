@@ -15,3 +15,4 @@ sources:
       - name: thelook_orders
       - name: thelook_products
       - name: thelook_users
+      - name: thelook_distribution_centres
